@@ -1,0 +1,41 @@
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.center_h{
+    margin: 0 auto;
+}
+
+#top{
+
+}
+
+#center{
+    justify-content: center;
+}
+
+#center img{
+    padding-top: 100px;
+}
+
+#center_container{
+    display: flex;
+    flex-direction: column;
+}
+
+#search{
+    width:400px;
+}
+
+
+#bottom{
+
+}
