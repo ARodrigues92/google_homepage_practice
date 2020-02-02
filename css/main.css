@@ -19,11 +19,40 @@ body{
 }
 
 #top{
-
+    justify-self: end;
 }
 
-#center{
-    justify-content: center;
+#top ul{
+    display: flex;
+    align-items: center;
+}
+
+.top_links{
+    padding: 0px 15px 0px 0px;
+}
+
+#apps{
+    width: 30px;
+    height: 30px;
+    background: url(../images/sprite.png) -132px -38px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .55;
+}
+
+#sign_in{
+    background-color: #4285f4;
+    display: inline-block;
+    padding: 0px 12px;
+    line-height: 28px;
+}
+
+#sign_in a{
+    color: #fff;
+}
+
+#apps:hover{
+    opacity: 1;
 }
 
 #center img{
