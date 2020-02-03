@@ -28,7 +28,7 @@ body{
 }
 
 .top_links{
-    padding: 0px 15px 0px 0px;
+    padding: 0 15px 0px 0;
 }
 
 #apps{
@@ -43,19 +43,24 @@ body{
 #sign_in{
     background-color: #4285f4;
     display: inline-block;
-    padding: 0px 12px;
+    padding: 0 12px;
     line-height: 28px;
 }
 
 #sign_in a{
     color: #fff;
+    font-weight: bold;
+}
+
+#sign_in a:hover{
+    text-decoration: none;
 }
 
 #apps:hover{
     opacity: 1;
 }
 
-#center img{
+#logo{
     padding-top: 100px;
 }
 
@@ -64,10 +69,120 @@ body{
     flex-direction: column;
 }
 
-#search{
-    width:400px;
+#search_icon_div{
+    width: 24px;
+    height: 24px;
+    padding-left: 20px;
 }
 
+#search_icon_div svg{
+    width: 100%;
+    height: 100%;
+}
+
+path{
+    fill: #9AA0A6;
+}
+#search_div{
+    width: 550px;
+    height: 45px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+#search_div:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.19);
+}
+
+#search_div:active{
+    box-shadow: 0 0 5px rgba(0,0,0,0.19);
+}
+
+#search{
+    width: 400px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#search_right_div{
+    display: flex;
+    align-items: center;
+}
+
+#search_right_div img{
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+#mic{
+    width: 25px;
+    height: 25px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    background-color: #262626;
+    width: 150px;
+    padding: 7px 0;
+    top: 100%;
+    margin-left: -58px;
+    margin-top: 13px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#tooltiptext2{
+      width: 100px;
+      margin-left: -30px;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#buttons_div{
+    padding-top: 25px;
+}
+
+.button{
+    cursor: pointer;
+    color: #5F6368;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    height: 36px;
+    padding: 0 16px;
+}
+
+.button:hover{
+    border: 1px solid #c6c6c6;
+}
 
 #bottom{
     background-color: #f2f2f2;
@@ -85,14 +200,14 @@ body{
 
 #top_footer_div p{
     padding-left: 27px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0 10px 0;
     font-size: 15px;
     color: rgba(0, 0, 0, .54)
 }
 
 ul{
-    padding: 0px;
-    margin: 10px 27px 10px 0px;
+    padding: 0;
+    margin: 10px 27px 10px 0;
 }
 
 li{
